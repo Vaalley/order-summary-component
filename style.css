@@ -11,9 +11,110 @@
 
 body {
 	font-family: "Red Hat Display", sans-serif;
-	background-color: var(--dark-blue);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	background-image: url("/images/pattern-background-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: var(--pale-blue);
+	text-align: center;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	width: 375px;
+}
+
+img {
+	border-top-right-radius: 1em;
+	border-top-left-radius: 1em;
+	height: 100%;
+	overflow: hidden;
+}
+
+.order-summary {
+	background-color: var(--very-pale-blue);
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+	padding: 2rem;
+}
+
+.order-header {
+	color: var(--dark-blue);
+	font-weight: 900;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.order-paragraph {
+	color: var(--desaturated-blue);
+	font-weight: 500;
+	font-size: 0.875rem;
+	margin-bottom: 2rem;
+}
+
+.plan-summary {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.annual-plan {
+	color: var(--dark-blue);
+	font-weight: 900;
+	font-size: 1rem;
+	text-align: start;
+}
+
+.price {
+	color: var(--desaturated-blue);
+	font-weight: 500;
+	font-size: 0.875rem;
+	text-align: start;
+}
+
+.change-order {
+	color: var(--bright-blue);
+	font-weight: 700;
+	font-size: 0.875rem;
+	text-align: start;
+}
+
+.change-order:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.proceed-payment {
+	background-color: var(--bright-blue);
+	border-radius: 1em;
+	color: var(--very-pale-blue);
+	font-weight: 700;
+	font-size: 0.875rem;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 100%;
+	-webkit-box-shadow: 0px 15px 25px -5px rgba(27, 53, 112, 0.35);
+	box-shadow: 0px 15px 25px -5px rgba(27, 53, 112, 0.35);
+	margin-bottom: 1rem;
+	border: none;
+}
+
+.proceed-payment:hover {
+	cursor: pointer;
+}
+
+.cancel-order {
+	color: var(--desaturated-blue);
+	font-weight: 700;
+	font-size: 0.875rem;
+}
+
+.cancel-order:hover {
+	cursor: pointer;
+	text-decoration: underline;
 }
