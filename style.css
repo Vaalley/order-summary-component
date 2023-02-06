@@ -118,3 +118,13 @@ img {
 	cursor: pointer;
 	text-decoration: underline;
 }
+
+@media (max-width: 375px) {
+	body {
+		background-image: url("/images/pattern-background-mobile.svg");
+	}
+
+	.card-container {
+		width: 90vw;
+	}
+}
